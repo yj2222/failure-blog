@@ -1,2 +1,36 @@
-%h1 Articles#index
-%p Find me in app/views/articles/index.html.erb
+.container-fluid.text-center.my-5
+  %h1 Failure-blog
+  %p 〜落ちこぼれが、エンジニアになるまでの備忘録〜
+
+= render "nav"
+
+.container.pt-5
+  .container-left.p-3
+    = icon 'far', 'clock', class: "text-secondary"
+    %span.text-secondary 2019-08-08
+    %h2.font-weight-bolder.py-3 迷っている人にみて欲しい！本物の卒業生が語る、TECH::EXPERTの評価！
+    .container-left__button.pb-3
+      = link_to "", class: "text-white" do
+        %button.btn.btn-primary
+          = icon 'fab', 'facebook', class: "pr-1"
+          %span Facebook
+      = link_to "", class: "text-white" do
+        %button.btn.btn-info 
+          = icon 'fab', 'twitter', class: "pr-1"
+          %span Twitter
+      = link_to "", class: "text-white" do
+        %button.btn.btn-danger
+          = icon 'fab', 'get-pocket', class: "pr-1"
+          %span Pocket
+      = link_to "", class: "text-white" do
+        %button.btn.btn-success
+          = icon 'fab', 'blogger', class: "pr-1"
+          %span Hatebu
+    = image_tag "common/tech_expert_image_1.jpg", class: "img-fluid w-100"
+
+    .container-left__main.pt-3
+      = render "main"
+
+  .container-right
+    %p プロフ
+

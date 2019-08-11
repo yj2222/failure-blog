@@ -1,0 +1,117 @@
+html {
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    display: flex;
+  }
+  .container-left {
+    width: 900px;
+    margin-right: 20px;
+  }
+  .container-right {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .nav-item {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  button {
+    width: 24%;
+    height: 60px;
+    span {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  button {
+    width: 24%;
+    height: 60px;
+  }
+}
+
+.nav-item {
+  width: 250px;
+  &:hover {
+    border-bottom: 1px solid white;
+    transition: 0.3s;
+  }
+}
+
+
+.container-left,.container-right {
+  border: 1px solid black;
+}
+
+strong {
+  background: linear-gradient(transparent 60%, rgb(255, 255, 72) 60%);
+}
+
+/* 吹き出し本体 */
+.balloon{
+  position: relative;
+  padding: 20px;
+  background: rgb(39, 39, 103);
+}
+
+/* アイコンを下に表示 */
+.balloon::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: 20px;
+  bottom: -15px;
+  border-top: 15px solid rgb(39, 39, 103);
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+}
+
+
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/code";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/dropdown";
+@import "bootstrap/button-group";
+@import "bootstrap/input-group";
+@import "bootstrap/custom-forms";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/card";
+@import "bootstrap/breadcrumb";
+@import "bootstrap/pagination";
+@import "bootstrap/badge";
+@import "bootstrap/jumbotron";
+@import "bootstrap/alert";
+@import "bootstrap/progress";
+@import "bootstrap/media";
+@import "bootstrap/list-group";
+@import "bootstrap/close";
+@import "bootstrap/toasts";
+@import "bootstrap/modal";
+@import "bootstrap/tooltip";
+@import "bootstrap/popover";
+@import "bootstrap/carousel";
+@import "bootstrap/spinners";
+@import "bootstrap/utilities";
+@import "bootstrap/print";
