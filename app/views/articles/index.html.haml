@@ -4,7 +4,7 @@
 
 = render "nav"
 
-.container.pt-5
+.container.pt-5.px-0
   .container-left.p-3
     = icon 'far', 'clock', class: "text-secondary"
     %span.text-secondary 2019-08-08
@@ -32,5 +32,16 @@
       = render "main"
 
   .container-right
-    %p プロフ
+    %h5.bg-dark.text-white.p-3.font-weight-bolder プロフィール
+    = image_tag "common/profile_image_1.jpg", class: "img-fluid w-100"
+    %h5.p-2.text-center.m-0 YJ
+    %p.m-0.container-right__profile TECH::EXPERTに通ってWEB系のエンジニアになりました。
+    %p.m-0.container-right__profile もともと、業種は違うのですが国交相システムの運用保守をやっていました。
+    %p.m-0.container-right__profile 運用時代に趣味でHTMLをいじったのがきっかけで、単純に「作るの楽しい！」って思い、これが仕事になったら良いなって思いこの業界に入りました。
+    %p.m-0.container-right__profile 今は経験も技術もまだまだですが、いつかはエンジニア仲間作って、何か１つのプロジェクト立ち上げてみたいなって小さな野望抱えてます！
+
+.container.bg-dark.text-white.p-4.mt-5
+  %p.m-0.w-100.text-center © 2019 YJ. All right reserved.
+    
+  
 
